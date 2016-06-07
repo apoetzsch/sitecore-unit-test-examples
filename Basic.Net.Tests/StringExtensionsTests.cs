@@ -1,37 +1,72 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Basic.Net;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Basic.Net.Tests
 {
-  [TestClass()]
+  [TestClass]
   public class StringExtensionsTests
   {
-    [TestMethod()]
+    [TestMethod]
     public void ShouldHaveValue()
     {
-      Assert.Fail();
+      var testString = "My value";
+
+      Assert.IsTrue(testString.HasValue());
     }
 
+    [TestMethod]
     public void ShouldHaveNoValue()
     {
-      Assert.Fail();
+      var testString = "";
+
+      Assert.IsFalse(testString.HasValue());
     }
 
-    [TestMethod()]
+    [TestMethod]
     public void ShouldRemoveWhitespaces()
     {
-      Assert.Fail();
+      var withWhitespaces = "   Co    nte nt    ";
+
+      var trimmed = withWhitespaces.RemoveWhitespaces();
+
+      Assert.AreEqual("Content", trimmed);
     }
 
-    [TestMethod()]
+    [TestMethod]
     public void ShouldCapitalizeString()
     {
-      Assert.Fail();
+      var mixedUppercases = "mIxEDUpperCases";
+
+      var capitalizedString = mixedUppercases.Capitalize();
+
+      Assert.AreNotEqual(mixedUppercases, capitalizedString);
+      Assert.AreEqual("Mixeduppercases", capitalizedString);
     }
   }
+
+  //[TestClass()]
+  //public class StringExtensionsTests
+  //{
+  //  [TestMethod()]
+  //  public void ShouldHaveValue()
+  //  {
+  //    Assert.Fail();
+  //  }
+
+  //  public void ShouldHaveNoValue()
+  //  {
+  //    Assert.Fail();
+  //  }
+
+  //  [TestMethod()]
+  //  public void ShouldRemoveWhitespaces()
+  //  {
+  //    Assert.Fail();
+  //  }
+
+  //  [TestMethod()]
+  //  public void ShouldCapitalizeString()
+  //  {
+  //    Assert.Fail();
+  //  }
+  //}
 }

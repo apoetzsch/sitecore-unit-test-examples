@@ -15,17 +15,14 @@ namespace Basic.Net
     }
 
     /// <summary>
-    /// remove whitespaces and multiple spaces from string
+    /// remove whitespaces from string
     /// </summary>
     /// <param name="text"></param>
     /// <returns></returns>
     public static string RemoveWhitespaces(this string text)
     {
       // remove whitespace
-      text = Regex.Replace(text, @"\s+", " ", RegexOptions.Multiline);
-
-      // remove multiple spaces
-      return Regex.Replace(text, @"[ ]{2,}", " ");
+      return Regex.Replace(text, @"\s+", "", RegexOptions.Multiline);
     }
 
 
