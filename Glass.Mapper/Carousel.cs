@@ -3,7 +3,7 @@ using Glass.Mapper.Sc.Configuration.Attributes;
 
 namespace Glass.Mapper
 {
-  [SitecoreType(TemplateId = "{E13A8039-947E-4C51-BA3E-F4B31AD632B3}", AutoMap = true)]
+  [SitecoreType(TemplateId = "{1834f1f3-96cd-4869-b76d-2d8994cc98ce}", AutoMap = true)]
   public class Carousel
   {
     public virtual string Title { get; set; }

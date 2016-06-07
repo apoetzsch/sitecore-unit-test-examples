@@ -8,7 +8,7 @@ namespace Sitecore
 {
   public class TaggingHelper
   {
-    public static readonly ID CategoryTagFieldId = new ID("{CB142B62-2F9D-4A97-96E8-C661BE673B20}");
+    public static readonly ID CategoryTagFieldId = new ID("{6f7985e0-70f0-4f63-9a0f-1a2b1a16451f}");
 
     public static ISet<string> GetLocationTags(Item item)
     {

@@ -2,7 +2,7 @@
 
 namespace Glass.Mapper
 {
-  [SitecoreType(TemplateId = "{1A1D95F7-58AA-44A4-8242-AE4F02C4BD4C}", AutoMap = true)]
+  [SitecoreType(TemplateId = "{a9391281-0249-4f75-8652-9e32baea58ae}", AutoMap = true)]
   public class CarouselVideo : ICarouselContent
   {
     [SitecoreField("CarouselVideoUrl")]
