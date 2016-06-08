@@ -3,7 +3,7 @@
 namespace Glass.Mapper.Tests
 {
   [TestClass]
-  class CarouselTests
+  public class CarouselTests
   {
     [TestMethod]
     public void ShouldHaveCarouselItems()

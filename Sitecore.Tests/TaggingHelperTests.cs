@@ -8,7 +8,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Sitecore.Tests
 {
   [TestClass]
-  class TaggingHelperTests
+  public class TaggingHelperTests
   {
     [TestMethod]
     public void ShouldGetLocationTags()
