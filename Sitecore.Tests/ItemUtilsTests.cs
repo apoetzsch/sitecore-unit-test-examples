@@ -1,26 +1,59 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Sitecore;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Sitecore.FakeDb;
 
 namespace Sitecore.Tests
 {
-  [TestClass()]
+  [TestClass]
   public class ItemUtilsTests
   {
-    [TestMethod()]
+    [TestMethod]
     public void ShouldInitializeItemUtils()
     {
-      Assert.Fail();
+      using (var db = SetupDb())
+      {
+        var item = db.GetItem("/sitecore/Content/Content Item");
+
+        var utils = new ItemUtils(item);
+
+        Assert.AreEqual(item, utils.Item);
+      }
     }
 
-    [TestMethod()]
+    [TestMethod]
     public void ShouldGetComponents()
     {
-      Assert.Fail();
+      using (var db = SetupDb())
+      {
+        var contentItem = db.GetItem("/sitecore/Content/Content Item");
+        var utils = new ItemUtils(contentItem);
+
+        var components = utils.ComponentItems;
+
+        Assert.IsTrue(components.Any());
+        Assert.AreEqual(3, components.Count);
+
+        foreach (var name in new[] { "Text", "Image", "Teaser" })
+        {
+          Assert.IsTrue(components.Any(x => x.Name == name), $"{name} should be a component item");
+        }
+      }
+    }
+
+    private static Db SetupDb()
+    {
+      return new Db
+      {
+        new DbItem("Content Item")
+        {
+          new DbItem("Components")
+          {
+            new DbItem("Text"),
+            new DbItem("Image"),
+            new DbItem("Teaser")
+          }
+        }
+      };
     }
   }
 }
