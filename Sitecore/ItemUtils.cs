@@ -10,21 +10,22 @@ namespace Sitecore
 {
   public class ItemUtils
   {
-    private readonly Item _item;
     private List<Item> _componentItems = new List<Item>();
 
     public ItemUtils(Item item)
     {
-      this._item = item;
+      Item = item;
     }
+
+    public Item Item { get; }
 
     public List<Item> ComponentItems
     {
       get
       {
         // get the (content)items of the components folder
-        var componentsFolderPath = _item.Paths.Path + "/Components";
-        var componentsItem = _item.Database.GetItem(componentsFolderPath);
+        var componentsFolderPath = Item.Paths.Path + "/Components";
+        var componentsItem = Item.Database.GetItem(componentsFolderPath);
         if (componentsItem != null && !componentsItem.ID.IsGlobalNullId)
         {
           _componentItems = componentsItem.Axes.GetDescendants().ToList();
