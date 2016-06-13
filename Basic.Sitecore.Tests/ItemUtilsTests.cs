@@ -1,8 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Linq;
+﻿using System.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sitecore.FakeDb;
 
-namespace Sitecore.Tests
+namespace Basic.Sitecore.Tests
 {
   [TestClass]
   public class ItemUtilsTests

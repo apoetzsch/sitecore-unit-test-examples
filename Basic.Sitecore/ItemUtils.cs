@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Sitecore.Data;
 using Sitecore.Data.Items;
 
-namespace Sitecore
+namespace Basic.Sitecore
 {
   public class ItemUtils
   {

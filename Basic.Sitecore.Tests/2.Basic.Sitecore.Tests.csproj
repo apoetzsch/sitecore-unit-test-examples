@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{98F499CC-C2AE-4C41-9DAB-E8AF7F7B2210}</ProjectGuid>
+    <ProjectGuid>{226058F7-DB3F-46CE-A7B6-4CC568E80C73}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sitecore.Tests</RootNamespace>
-    <AssemblyName>Sitecore.Tests</AssemblyName>
+    <RootNamespace>Basic.Sitecore.Tests</RootNamespace>
+    <AssemblyName>Basic.Sitecore.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -74,9 +74,9 @@
     <Compile Include="TaggingHelperTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sitecore\2.Sitecore.csproj">
-      <Project>{CEBEEC07-552F-4606-BCA7-6CAC5D14E9B1}</Project>
-      <Name>2.Sitecore</Name>
+    <ProjectReference Include="..\Basic.Sitecore\2.Basic.Sitecore.csproj">
+      <Project>{09e0567a-4ec3-4007-a334-eccc2f9a6df6}</Project>
+      <Name>2.Basic.Sitecore</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

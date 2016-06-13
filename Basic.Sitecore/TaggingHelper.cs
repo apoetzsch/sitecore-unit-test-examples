@@ -4,7 +4,7 @@ using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 
-namespace Sitecore
+namespace Basic.Sitecore
 {
   public class TaggingHelper
   {
