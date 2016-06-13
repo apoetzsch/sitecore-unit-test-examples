@@ -10,7 +10,7 @@ namespace Basic.Sitecore
   {
     public static readonly ID CategoryTagFieldId = new ID("{6f7985e0-70f0-4f63-9a0f-1a2b1a16451f}");
 
-    public static ISet<string> GetLocationTags(Item item)
+    public static ISet<string> GetCategoryTags(Item item)
     {
       return GetTags(item, CategoryTagFieldId);
     }
