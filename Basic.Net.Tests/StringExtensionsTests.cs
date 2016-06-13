@@ -42,31 +42,4 @@ namespace Basic.Net.Tests
       Assert.AreEqual("Mixeduppercases", capitalizedString);
     }
   }
-
-  //[TestClass()]
-  //public class StringExtensionsTests
-  //{
-  //  [TestMethod()]
-  //  public void ShouldHaveValue()
-  //  {
-  //    Assert.Fail();
-  //  }
-
-  //  public void ShouldHaveNoValue()
-  //  {
-  //    Assert.Fail();
-  //  }
-
-  //  [TestMethod()]
-  //  public void ShouldRemoveWhitespaces()
-  //  {
-  //    Assert.Fail();
-  //  }
-
-  //  [TestMethod()]
-  //  public void ShouldCapitalizeString()
-  //  {
-  //    Assert.Fail();
-  //  }
-  //}
 }
