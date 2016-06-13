@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Glass.Mapper.Tests
+namespace GlassMapper.Tests
 {
   [TestClass]
   public class CarouselTests

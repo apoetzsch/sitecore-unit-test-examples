@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Glass.Mapper")]
+[assembly: AssemblyTitle("GlassMapper")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Glass.Mapper")]
+[assembly: AssemblyProduct("GlassMapper")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("aa561f23-83cd-4afc-b557-58a61d9d4b7a")]
+[assembly: Guid("6b1cceae-9cde-4040-a48e-bc56f002cfef")]
 
 // Version information for an assembly consists of the following four values:
 //

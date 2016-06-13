@@ -1,11 +1,12 @@
 #region GlassMapperScCustom generated code
 using Glass.Mapper.Configuration;
+using Glass.Mapper.Configuration.Attributes;
 using Glass.Mapper.IoC;
 using Glass.Mapper.Maps;
 using Glass.Mapper.Sc.IoC;
 using IDependencyResolver = Glass.Mapper.Sc.IoC.IDependencyResolver;
 
-namespace Glass.Mapper.App_Start
+namespace GlassMapper.Tests.App_Start
 {
     public static  class GlassMapperScCustom
     {
@@ -17,16 +18,19 @@ namespace Glass.Mapper.App_Start
 			return dependencyResolver;
 		}
 
-		public static IConfigurationLoader[] GlassLoaders(){			
-			
-			/* USE THIS AREA TO ADD FLUENT CONFIGURATION LOADERS
+		public static IConfigurationLoader[] GlassLoaders(){
+
+      /* USE THIS AREA TO ADD FLUENT CONFIGURATION LOADERS
              * 
              * If you are using Attribute Configuration or automapping/on-demand mapping you don't need to do anything!
              * 
              */
 
-			return new IConfigurationLoader[]{};
-		}
+      return new IConfigurationLoader[]
+      {
+        new AttributeConfigurationLoader( "GlassMapper")
+      };
+    }
 		public static void PostLoad(){
 			//Remove the comments to activate CodeFist
 			/* CODE FIRST START

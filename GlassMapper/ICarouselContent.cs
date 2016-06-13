@@ -1,8 +1,8 @@
-﻿namespace Glass.Mapper
+﻿namespace GlassMapper
 {
   public interface ICarouselContent
   {
-    Sc.Fields.Image Image { get; set; }
+    Glass.Mapper.Sc.Fields.Image Image { get; set; }
 
    string Caption { get; set; }
   }
