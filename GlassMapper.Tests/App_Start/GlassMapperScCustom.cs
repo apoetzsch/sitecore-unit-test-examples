@@ -28,7 +28,7 @@ namespace GlassMapper.Tests.App_Start
 
       return new IConfigurationLoader[]
       {
-        new AttributeConfigurationLoader( "GlassMapper")
+        new AttributeConfigurationLoader( "GlassMapper" )
       };
     }
 		public static void PostLoad(){

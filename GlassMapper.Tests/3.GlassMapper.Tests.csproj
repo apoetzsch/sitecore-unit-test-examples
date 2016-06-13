@@ -91,6 +91,12 @@
     <None Include="App_Config\Include\Glass.Mapper.Sc.Start.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GlassMapper\3.GlassMapper.csproj">
+      <Project>{6B1CCEAE-9CDE-4040-A48E-BC56F002CFEF}</Project>
+      <Name>3.GlassMapper</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
