@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using Glass.Mapper;
 using Glass.Mapper.Sc.Configuration.Attributes;
+using GlassMapper.Intrefaces;
 
 namespace GlassMapper
 {

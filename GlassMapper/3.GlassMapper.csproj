@@ -59,7 +59,9 @@
     <Compile Include="Carousel.cs" />
     <Compile Include="CarouselImage.cs" />
     <Compile Include="CarouselVideo.cs" />
-    <Compile Include="ICarouselContent.cs" />
+    <Compile Include="GlassBase.cs" />
+    <Compile Include="Intrefaces\IGlassBase.cs" />
+    <Compile Include="Intrefaces\ICarouselContent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
