@@ -25,6 +25,7 @@ namespace Mocking.Tests
     [TestMethod]
     public void ShouldBeInvalidUser()
     {
+      Assert.Fail();
     }
 
     [TestMethod]
